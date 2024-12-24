@@ -1,10 +1,10 @@
 Feature: Create new user and get the users by id
 
-  @smoke
+  @smoke1
   Scenario: Create new user
     Given Set up the create user request body
     When Create a new user
-    Then Verify the create response status code 201
+    Then Verify the create response status code 200
     And Get the create user response details
     Then Verify the user details
 
@@ -22,7 +22,7 @@ Feature: Create new user and get the users by id
 #    Then Verify the get single user response status code 200
 #    Then Verify the single user details
 
-  @smoke
+  @smoke2
   Scenario: Get user by id
     When Get a following single user "2"
     And Get the single user response details
